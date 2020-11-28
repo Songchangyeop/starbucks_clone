@@ -196,5 +196,75 @@ a {
 }
 
 .btn_slogan a:hover {
-  background-color: #00600f;
+  background-color: #1e3932;
+}
+
+.line_notice {
+  width: 100%;
+  height: 62px;
+}
+
+.line_notice__left {
+  float: left;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 100%;
+}
+
+.left-notice_container {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.left-notice_container > a {
+  color: white;
+}
+
+.news {
+  width: 285px;
+  margin: 0px 50px 0px 20px;
+}
+
+.news-plus {
+  width: 36px;
+  height: 36px;
+}
+
+.news_plus {
+  background: url(imgs/btn_notice_plus.png) 0 0 no-repeat;
+  background-size: 36px;
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+
+.line_notice__right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hide_slide {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hide_slide > h4 {
+  margin: 0px 80px;
+}
+
+/* 리워드 */
+
+.rewards {
+  background-color: #1e3932;
+  width: 100%;
+  height: 240px;
 }
