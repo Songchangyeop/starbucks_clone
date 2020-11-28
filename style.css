@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 
+/* 헤더 */
 .header {
   background-color: #f6f5ef;
   width: 100%;
@@ -58,4 +59,142 @@ a {
 .util_nav > li {
   padding: 10px;
   font-size: 13px;
+}
+
+/* 메인 */
+
+.main {
+  background-image: url(imgs/2020_xams_bg_1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  height: 646px;
+}
+
+.main__inner {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 70px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.inner-set {
+  position: absolute;
+}
+
+.inner-set::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  max-height: 98px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.set_01 {
+  bottom: 12.5%;
+  left: 26%;
+  width: 29%;
+  max-width: 308px;
+}
+
+.set_01::after {
+  top: 98%;
+  left: 0;
+  width: 60%;
+  max-width: 184px;
+  background-image: url(imgs/2020_xmas_latte_tit_1.png);
+}
+
+.set_02 {
+  bottom: 20%;
+  left: 39.7%;
+  width: 25%;
+  max-width: 263px;
+}
+
+.set_02::after {
+  top: -27%;
+  left: -12%;
+  width: 88%;
+  max-width: 230px;
+  background-image: url(imgs/2020_xmas_popcorn_tit_1.png);
+}
+
+.set_03 {
+  bottom: 15%;
+  left: 55.7%;
+  width: 26%;
+  max-width: 281px;
+  z-index: 1;
+}
+
+.set_03::after {
+  top: 103%;
+  left: -7%;
+  width: 80%;
+  max-width: 223px;
+  background-image: url(imgs/2020_xmas_relaxer_tit_1.png);
+}
+
+.set_04 {
+  bottom: 32%;
+  left: 69%;
+  width: 26%;
+  max-width: 275px;
+}
+
+.set_04:after {
+  top: 2%;
+  left: 51%;
+  width: 67%;
+  max-width: 183px;
+  background-image: url(imgs/2020_xmas_blended_tit.png);
+}
+
+.set_05 {
+  bottom: 20%;
+  left: 78.5%;
+  width: 26%;
+  max-width: 294px;
+}
+
+.set_05::after {
+  top: 90%;
+  left: 1%;
+  width: 66%;
+  max-width: 183px;
+  background-image: url(imgs/2020_xmas_chocolate_tit_1.png);
+}
+
+.btn_slogan {
+  color: white;
+  position: absolute;
+  box-sizing: border-box;
+  top: auto;
+  left: 10.5%;
+  width: 125px;
+  height: 38px;
+  line-height: 34px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  z-index: 5;
+}
+
+.btn_slogan a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 300ms ease;
+}
+
+.btn_slogan a:hover {
+  background-color: #00600f;
 }
