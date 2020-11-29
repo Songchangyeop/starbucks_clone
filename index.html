@@ -11,7 +11,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <script src="dropdown.js"></script>
+    <script src="dropdown.js" defer></script>
   </head>
   <body>
     <section class="header">
@@ -25,18 +25,20 @@
             <li><a href="">Find a Srore</a></li>
           </ul>
           <ul class="sub_nav">
-            <li><a href="">COFFEE</a></li>
-            <li><a href="">MENU</a></li>
-            <li><a href="">STORE</a></li>
-            <li><a href="">RESPONSIBILITY</a></li>
-            <li><a href="">STARBUCKS REWARDS</a></li>
-            <li><a href="">WHAT'S NEW</a></li>
+            <li><a class="sub_nav__coffee" href="">COFFEE</a></li>
+            <li><a class="sub_nav__menu" href="">MENU</a></li>
+            <li class="sub_nav__store"><a href="">STORE</a></li>
+            <li class="sub_nav__responsibility">
+              <a href="">RESPONSIBILITY</a>
+            </li>
+            <li class="sub_nav__rewards"><a href="">STARBUCKS REWARDS</a></li>
+            <li class="sub_nav__new"><a href="">WHAT'S NEW</a></li>
           </ul>
         </div>
       </div>
 
       <!-- 드롭다운 -->
-      <div class="dropdown">
+      <div class="dropdown dropdown_coffee">
         <div class="dropdown_container">
           <ul>
             <li class="dropdown__title_list"><a href="">커피</a></li>
@@ -84,6 +86,59 @@
           </ul>
         </div>
       </div>
+      <div class="dropdown dropdown_menu">
+        <div class="dropdown_container">
+          <ul>
+            <li class="dropdown__title_list"><a href="">음료</a></li>
+            <li><a href="">콜드 브루</a></li>
+            <li><a href="">브루드 커피</a></li>
+            <li><a href="">에스프레소</a></li>
+            <li><a href="">프라푸치노</a></li>
+            <li><a href="">블렌디드</a></li>
+            <li><a href="">스타벅스 피지오</a></li>
+            <li><a href="">티(티바나)</a></li>
+            <li><a href="">기타 제조 음료</a></li>
+            <li><a href="">스타벅스 주스(병음료)</a></li>
+          </ul>
+          <ul>
+            <li class="dropdown__title_list"><a href="">푸드</a></li>
+            <li><a href="">브레드</a></li>
+            <li><a href="">케이크</a></li>
+            <li><a href="">샌드위치 & 샐러드</a></li>
+            <li><a href="">따뜻한 푸드</a></li>
+            <li><a href="">과일 & 요거트</a></li>
+            <li><a href="">스낵 & 미니디저트</a></li>
+            <li><a href="">아이스크림</a></li>
+          </ul>
+          <ul>
+            <li class="dropdown__title_list"><a href="">상품</a></li>
+            <li><a href="">머그</a></li>
+            <li><a href="">글라스</a></li>
+            <li><a href="">플라스틱 텀블러</a></li>
+            <li><a href="">스테인리스 텀블러</a></li>
+            <li><a href="">보온병</a></li>
+            <li><a href="">액세서리</a></li>
+            <li><a href="">커피용품</a></li>
+            <li><a href="">패키지 티(티바나)</a></li>
+            <li><a href="">스타벅스 플래너</a></li>
+          </ul>
+          <ul>
+            <li class="dropdown__title_list"><a href="">카드</a></li>
+            <li><a href="">실물카드</a></li>
+            <li><a href="">e-Gift 카드</a></li>
+          </ul>
+          <ul>
+            <li class="dropdown__title_list"><a href="">메뉴 이야기</a></li>
+            <li><a href="">나이트로 콜드브루</a></li>
+            <li><a href="">콜드 브루</a></li>
+            <li><a href="">스타벅스 티바나</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="dropdown"></div>
+      <div class="dropdown"></div>
+      <div class="dropdown"></div>
+      <div class="dropdown"></div>
     </section>
 
     <!-- 메인 -->
