@@ -293,20 +293,80 @@ a {
   justify-content: flex-start;
 }
 
-.hide_slide {
+.hide_btn {
   width: auto;
+  cursor: pointer;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.hide_slide > h4 {
+.hide_btn > h4 {
   margin: 0px 80px;
+}
+
+/* Hide Slide */
+.hide_slide {
+  z-index: 3;
+  position: relative;
+  background-color: white;
+  /* visibility: hidden; */
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  transition: height 300ms ease;
+  text-align: center;
+}
+
+.hide_slide-box {
+  z-index: 3;
+  width: 1100px;
+  height: 552px;
+  margin: auto;
+  margin-top: 30px;
+  transform: translateX(-62%);
+}
+
+.slide_swiper-box {
+  transform: translateY(-90%);
+  margin: auto;
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper_btn {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.hide_slide-list {
+  box-sizing: border-box;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+  height: 620px;
+  transition: all 500ms ease;
+}
+
+.hide_slide-item {
+  z-index: 3;
+  width: 820px;
+  float: left;
 }
 
 /* 리워드 */
 
 .rewards {
+  position: relative;
+  z-index: 4;
   background-color: #1e3932;
   width: 100%;
   height: 240px;

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <script src="dropdown.js" defer></script>
+    <script src="hide_slider.js" defer></script>
   </head>
   <body>
     <section class="header">
@@ -181,12 +182,31 @@
         </div>
       </div>
       <div class="line_notice__right">
-        <a class="hide_slide" href="">
+        <div class="hide_btn">
           <h4>스타벅스 프로모션</h4>
           <i class="fas fa-chevron-down"></i>
-        </a>
+        </div>
       </div>
     </section>
+    <div class="hide_slide close">
+      <div class="hide_slide-box">
+        <ul class="hide_slide-list">
+          <li class="hide_slide-item">
+            <img src="imgs/slide1.jpg" alt="" />
+          </li>
+          <li class="hide_slide-item">
+            <img src="imgs/slide2.jpg" alt="" />
+          </li>
+          <li class="hide_slide-item">
+            <img src="imgs/slide3.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+      <div class="slide_swiper-box">
+        <button class="left_swiper swiper_btn" type="button"><</button>
+        <button class="right_swiper swiper_btn" type="button">></button>
+      </div>
+    </div>
     <!-- 리워드 -->
     <section class="rewards"></section>
   </body>
