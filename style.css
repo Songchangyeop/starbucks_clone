@@ -359,6 +359,7 @@ a {
 .hide_slide-item {
   z-index: 3;
   width: 820px;
+  padding: 0 10px;
   float: left;
 }
 
