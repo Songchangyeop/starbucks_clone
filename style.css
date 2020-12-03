@@ -124,8 +124,15 @@ a {
   box-sizing: border-box;
 }
 
+.main__inner-slogan {
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
 .inner-set {
   position: absolute;
+  opacity: 0;
+  transition: all 500ms ease;
 }
 
 .inner-set::after {
@@ -228,6 +235,8 @@ a {
   border: 2px solid #fff;
   border-radius: 3px;
   z-index: 5;
+  opacity: 0;
+  transition: all 500ms ease;
 }
 
 .btn_slogan a {
@@ -305,7 +314,8 @@ a {
   margin: 0px 80px;
 }
 
-/* Hide Slide */
+/* 슬라이더  */
+
 .hide_slide {
   z-index: 3;
   position: relative;
@@ -314,7 +324,7 @@ a {
   width: 100%;
   overflow: hidden;
   height: 0;
-  transition: height 300ms ease;
+  transition: height 500ms ease;
   text-align: center;
 }
 
@@ -335,6 +345,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 100ms ease;
 }
 
 .swiper_btn {
@@ -344,7 +355,14 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid black;
   outline: none;
+  transition: all 200ms ease;
+}
+
+.swiper_btn:hover {
+  background-color: white;
+  opacity: 0.7;
 }
 
 .hide_slide-list {
@@ -371,4 +389,14 @@ a {
   background-color: #1e3932;
   width: 100%;
   height: 240px;
+}
+
+/* 블렌드 */
+
+.main-blend {
+  background-image: url(imgs/2020_xmas_bean_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 573px;
 }
