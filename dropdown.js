@@ -4,31 +4,39 @@ const dropdown = document.querySelectorAll('.dropdown');
 const subNav = document.querySelector('.sub_nav');
 const coffee = document.querySelector('.dropdown_coffee');
 const menu = document.querySelector('.dropdown_menu');
-
+const navCoffee = document.querySelector('.sub_nav__coffee');
+const navMenu = document.querySelector('.sub_nav__menu');
 
 subNav.addEventListener('mouseover', (event) => {
     const target = event.target;
-    // if(target.classList[0] === 'sub_nav__coffee') {
-    //     coffee.style.visibility = 'visible'; 
-    //     coffee.style.height = `${440}px`;
-    //     coffee.style.overflow ='hidden';
-    // } else if(target.classList[0] !== 'sub_nav__coffee') {
-    //     coffee.style.height = `${0}px`;
-    //     coffee.style.overflow ='hidden';
-    // }   
+
     switch(target.classList[0]) {
         case 'sub_nav__coffee':
             caseCoffee();
             break;
         case 'sub_nav__menu':
             caseMenu(); 
-            break;  
+            break; 
+        case 'sub_nav__store':
+            caseCoffee(); 
+            break;
+        case 'sub_nav__responsibility':
+            caseMenu(); 
+            break;
+        case 'sub_nav__rewards':
+            caseCoffee(); 
+            break;
+        case 'sub_nav__new':
+            caseMenu(); 
+            break;            
         default :
         caseDefault();     
     }
 });
 
 function caseCoffee() {
+    navMenu.classList.remove('mouseover');
+    navCoffee.classList.add('mouseover');
     menu.style.height = `${0}px`;
     menu.style.overflow ='hidden';
     coffee.style.visibility = 'visible'; 
@@ -37,6 +45,8 @@ function caseCoffee() {
 }
 
 function caseMenu() {
+    navCoffee.classList.remove('mouseover');
+    navMenu.classList.add('mouseover');
     coffee.style.height = `${0}px`;
     coffee.style.overflow ='hidden';
     menu.style.visibility = 'visible'; 
@@ -46,6 +56,8 @@ function caseMenu() {
 
 
 function caseDefault() {
+    navCoffee.classList.remove('mouseover');
+    navMenu.classList.remove('mouseover');
     dropdown.forEach(element => {
         element.style.height = `${0}px`;
         element.style.overflow ='hidden';
@@ -66,9 +78,12 @@ menu.addEventListener('mouseover',(event) => {
         caseMenu();
 });
 
+// DropDown - MouseOut
 dropdown.forEach(element => {
     element.addEventListener('mouseout',() => {
     element.style.height = `${0}px`;
     element.style.overflow ='hidden';
+    navCoffee.classList.remove('mouseover');
+    navMenu.classList.remove('mouseover');
     });
 });
