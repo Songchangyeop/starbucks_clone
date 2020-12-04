@@ -513,3 +513,22 @@ a {
   width: 100%;
   height: 573px;
 }
+
+.belnd_info {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blend_img-box {
+  transition: all 2000ms ease;
+  transform: translateX(-1000px);
+}
+
+.blend_text-box {
+  transition: all 2000ms ease;
+  transform: translateX(800px);
+}

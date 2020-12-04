@@ -3,6 +3,8 @@
 const innerSet = document.querySelectorAll('.inner-set');
 const innerSlogan = document.querySelector('.main__inner-slogan');
 const btnSlogan  = document.querySelector('.btn_slogan');
+const headerHeight = document.querySelector('.header').getBoundingClientRect().height;
+const HideSlide = document.querySelector('.hide_slide');
 
 
 function delay(time, index, node) {
@@ -37,3 +39,19 @@ function appearContent() {
 
 appearContent();
 
+
+const blendImg = document.querySelector('.blend_img-box');
+const blendText = document.querySelector('.blend_text-box');
+document.addEventListener('scroll', () => {
+    
+    if(hideSlide.classList[1] === 'close' && window.scrollY > 100){
+        blendImg.style.transform = `translate(-${90}px)`;
+        blendText.style.transform = `translate(-${70}px)`;
+    } else if(hideSlide.classList[1] !== 'close' && window.scrollY > 740){
+        blendImg.style.transform = `translate(-${90}px)`;
+        blendText.style.transform = `translate(-${70}px)`;
+    } else {
+        blendImg.style.transform = `translate(-${1000}px)`;
+        blendText.style.transform = `translate(${800}px)`;
+    }
+});
