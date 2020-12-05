@@ -7,6 +7,7 @@ const headerHeight = document.querySelector('.header').getBoundingClientRect().h
 const HideSlide = document.querySelector('.hide_slide');
 
 
+
 function delay(time, index, node) {
     if(node == undefined){
         setTimeout(() => {
@@ -39,19 +40,59 @@ function appearContent() {
 
 appearContent();
 
-
+// Interactive
 const blendImg = document.querySelector('.blend_img-box');
 const blendText = document.querySelector('.blend_text-box');
+const favoriteText_01 = document.querySelector('.favorite__text_01');
+const favoriteText_02 = document.querySelector('.favorite__text_02');
 document.addEventListener('scroll', () => {
-    
+
     if(hideSlide.classList[1] === 'close' && window.scrollY > 100){
-        blendImg.style.transform = `translate(-${90}px)`;
-        blendText.style.transform = `translate(-${70}px)`;
-    } else if(hideSlide.classList[1] !== 'close' && window.scrollY > 740){
-        blendImg.style.transform = `translate(-${90}px)`;
-        blendText.style.transform = `translate(-${70}px)`;
+        moveBlend();
+    } 
+    else if(hideSlide.classList[1] !== 'close' && window.scrollY > 740){
+        moveBlend();
     } else {
-        blendImg.style.transform = `translate(-${1000}px)`;
-        blendText.style.transform = `translate(${800}px)`;
+        defaultBlend();
+    }    
+
+    if(hideSlide.classList[1] === 'close' && window.scrollY > 1050){
+        moveFavorite();
+    } 
+    else if(hideSlide.classList[1] !== 'close' && window.scrollY > 1750){
+        moveFavorite();
+    } else {
+        defaultFavorite();
     }
 });
+
+
+function moveBlend() {
+    blendImg.style.transform = `translate(-${90}px)`;
+    blendText.style.transform = `translate(-${70}px)`;
+    blendImg.style.opacity = '1';
+    blendText.style.opacity = '1';
+}
+
+function moveFavorite() {
+    setTimeout(() => {
+        favoriteText_01.style.transform = `translate(${150}px)`;
+    }, 100);
+    favoriteText_02.style.transform = `translate(${50}px)`;
+    favoriteText_01.style.opacity = '1';
+    favoriteText_02.style.opacity = '1';
+}
+
+function defaultBlend() {
+    blendImg.style.transform = `translate(-${1000}px)`;
+    blendText.style.transform = `translate(${800}px)`;
+    blendImg.style.opacity = '0';
+    blendText.style.opacity = '0';
+}
+
+function defaultFavorite() {
+    favoriteText_01.style.transform = `translate(-${1000}px)`;
+    favoriteText_02.style.transform = `translate(-${1000}px)`;
+    favoriteText_01.style.opacity = '0';
+    favoriteText_02.style.opacity = '0';
+}

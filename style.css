@@ -564,11 +564,114 @@ a {
 }
 
 .blend_img-box {
-  transition: all 2000ms ease;
+  transition: all 3000ms ease;
   transform: translateX(-1000px);
+  opacity: 0;
 }
 
 .blend_text-box {
-  transition: all 2000ms ease;
+  transition: all 3000ms ease;
   transform: translateX(800px);
+  opacity: 0;
+}
+
+/* 리저브 */
+.reserve {
+  background-image: url(imgs/reserve_xmas_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.reserve_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserve_title {
+  text-align: center;
+  transform: translateX(50px);
+}
+
+.reserve_detail_btn {
+  font-size: 14px;
+  width: 126px;
+  height: 38px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 34px;
+}
+
+.reserve_detail_btn > a {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e3b59e;
+  border-radius: 4px;
+  color: #e3b59e;
+}
+
+/* Favorite */
+
+.favorite {
+  background-image: url(imgs/fav_prod_bg_new.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-color: #45434c;
+  height: 800px;
+}
+
+.favorite_container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite__text_01 {
+  transform: translateX(-1000px);
+  transition: all 3000ms ease;
+  opacity: 0;
+}
+
+.favorite__text_02 {
+  margin-top: 40px;
+  transform: translateX(-1000px);
+  transition: all 3000ms ease;
+  opacity: 0;
+}
+
+.favorite_detail_btn {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  height: 34px;
+  width: 120px;
+  margin-top: 40px;
+  transform: translateX(290px);
+}
+
+.favorite_detail_btn > a {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  line-height: 34px;
+  text-align: center;
+}
+
+/* Magazine */
+
+.magazine {
+  width: 100%;
+  height: 700px;
+  background-color: burlywood;
 }
