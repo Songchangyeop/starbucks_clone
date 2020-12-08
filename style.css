@@ -671,9 +671,11 @@ a {
 /* Magazine */
 
 .magazine {
+  position: relative;
   width: 100%;
   height: 700px;
   background-color: #fff;
+  z-index: 2;
 }
 
 .magazine_container {
@@ -728,4 +730,71 @@ a {
   position: absolute;
   background-color: #cccccb;
   transform: translate(90px, 80px);
+}
+
+/* Store */
+
+.store {
+  background-image: url(imgs/store_bg.jpg);
+  width: 100%;
+  height: 400px;
+}
+
+.store_container {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.store__imgbox__img01 {
+  position: relative;
+  transform: translate(400px, 150px);
+  z-index: 2;
+}
+
+.store__imgbox__img02 {
+  position: relative;
+  transform: translate(150px, -230px);
+  z-index: 1;
+}
+
+.store__inner_img01 {
+  position: absolute;
+  transform: translate(530px, -60px);
+  z-index: 1;
+}
+
+.store__inner_img02 {
+  transform: translate(-30px, 300px);
+}
+
+.store__textbox {
+  transform: translate(190px, 100px);
+}
+
+.store__textbox__text01 {
+  margin-bottom: 10px;
+}
+
+.store__textbox__text02 {
+  margin-bottom: 20px;
+}
+
+.store__textbox__btn {
+  border: 2px solid #222;
+  border-radius: 3px;
+  height: 34px;
+  line-height: 34px;
+  width: 121px;
+  z-index: 1;
+}
+
+.store__textbox__btn > a {
+  color: #222;
+  display: block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  transition: background-color 700ms ease;
 }
