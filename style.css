@@ -353,6 +353,16 @@ a {
   margin: 0px 80px;
 }
 
+.hide_btn__icon {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+}
+
 /* 슬라이더  */
 
 .hide_slide {
@@ -666,6 +676,13 @@ a {
   width: 100%;
   line-height: 34px;
   text-align: center;
+  transition: ;
+}
+
+.favorite_detail_btn > a:hover {
+  background-color: #fff;
+  color: #222;
+  transition: background-color 700ms ease;
 }
 
 /* Magazine */
@@ -687,6 +704,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .magazine_left {
@@ -698,11 +716,17 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translate(20px, -20px);
+  transform: translate(800px, -20px);
+  transition: all 3000ms ease;
+  opacity: 0;
 }
 
 .magazine_right__btn {
-  transform: translate(-138px, 100px);
+  transform: translate(800px, 100px);
+  /* background-color: #976d3f; */
+  opacity: 0;
+  padding: 8px 10px;
+  transition: transform 3000ms ease;
 }
 
 .magazine_right__btn > a {
@@ -713,7 +737,7 @@ a {
 }
 
 .magazine_right__btn > a > img {
-  transform: translateY(-100%);
+  transform: translateY(0);
 }
 
 .magazine__vertical {
@@ -775,10 +799,16 @@ a {
 
 .store__textbox__text01 {
   margin-bottom: 10px;
+  transform: translate(800px);
+  transition: all 3000ms ease;
+  opacity: 0;
 }
 
 .store__textbox__text02 {
   margin-bottom: 20px;
+  transform: translate(800px);
+  transition: all 3000ms ease;
+  opacity: 0;
 }
 
 .store__textbox__btn {
@@ -788,6 +818,9 @@ a {
   line-height: 34px;
   width: 121px;
   z-index: 1;
+  transform: translate(800px);
+  transition: all 3000ms ease;
+  opacity: 0;
 }
 
 .store__textbox__btn > a {
@@ -797,4 +830,9 @@ a {
   text-align: center;
   width: 100%;
   transition: background-color 700ms ease;
+}
+
+.store__textbox__btn > a:hover {
+  background-color: #222222;
+  color: #fff;
 }
