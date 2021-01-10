@@ -9,7 +9,7 @@ Vanilla JS를 통해 웹페이지를 구축하고자 하였습니다
 
 <br>
 
-<image src="imgs/starbucks.png" width="500">
+<image src="imgs/starbucks.PNG" width="500">
 
 <br>
 <br>
