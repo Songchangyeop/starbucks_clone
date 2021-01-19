@@ -836,3 +836,33 @@ a {
   background-color: #222222;
   color: #fff;
 }
+
+#footer {
+  background: #2c2a29;
+  position: relative;
+  width: 100%;
+  padding: 32px 0 35px 0;
+}
+
+.footer__container {
+  margin: auto;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-around;
+  background: url(imgs/footer_logo.png) right 8px no-repeat;
+}
+
+.footer__menu {
+  color: white;
+  margin: 0;
+  font-size: 12px;
+}
+
+.footer__menu > li {
+  margin: 5px;
+}
+
+.footer__menu-title {
+  margin: 15px 0;
+  font-size: 14px;
+}
